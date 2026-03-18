@@ -5,6 +5,7 @@
 
 # Ignore minified files
 *.min.js linguist-minified
+*.min.ts linguist-minified
 *.min.css linguist-minified
 
 
