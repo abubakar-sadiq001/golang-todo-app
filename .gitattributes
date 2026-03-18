@@ -2,6 +2,8 @@
 
 # Ignore CSS
 *.css linguist-vendored
+*.ts linguist-vendored
+
 
 # Ignore minified files
 *.min.js linguist-minified
