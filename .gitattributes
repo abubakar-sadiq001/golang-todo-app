@@ -1,2 +1,6 @@
-# Force Go as the main language
 *.go linguist-language=Go
+
+# Ignore frontend stuff
+*.css linguist-vendored
+*.ts linguist-vendored
+*.html linguist-vendored
