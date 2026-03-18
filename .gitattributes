@@ -1,0 +1,12 @@
+# Prioritize Go by ignoring CSS and other non-core assets
+
+# Ignore CSS
+*.css linguist-vendored
+
+# Ignore minified files
+*.min.js linguist-minified
+*.min.css linguist-minified
+
+
+# Optional: mark Go explicitly
+*.go linguist-language=Go
