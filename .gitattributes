@@ -1,6 +1,9 @@
+# Make Go the primary language
 *.go linguist-language=Go
 
-# Ignore frontend stuff
+# Ignore frontend files (Next.js / React)
 *.css linguist-vendored
+*.tsx linguist-vendored
 *.ts linguist-vendored
+*.jsx linguist-vendored
 *.html linguist-vendored
