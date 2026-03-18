@@ -1,5 +1,2 @@
 # Force Go as the main language
 *.go linguist-language=Go
-
-# Ignore everything else
-* linguist-vendored
