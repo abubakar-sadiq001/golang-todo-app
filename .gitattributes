@@ -6,4 +6,4 @@
 *.tsx linguist-vendored
 *.ts linguist-vendored
 *.jsx linguist-vendored
-*.html linguist-vendored
+# *.html linguist-vendored
