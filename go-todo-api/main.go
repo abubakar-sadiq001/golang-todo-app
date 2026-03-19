@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 	"net/http"
+	"os"
 )
 
 func main() {
@@ -10,9 +11,13 @@ func main() {
 
 	RegisterRoutes()
 
-	log.Println("🚀 Server running on :8080")
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080"
+	}
 
-	http.ListenAndServe("localhost:8080", enableCORS(http.DefaultServeMux))
+	log.Println("🚀 Server running on :8080")
+	http.ListenAndServe(":"+port, enableCORS(http.DefaultServeMux))
 }
 
 func enableCORS(next http.Handler) http.Handler {
