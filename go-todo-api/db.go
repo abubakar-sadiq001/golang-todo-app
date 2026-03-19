@@ -14,7 +14,7 @@ var DB *sql.DB
 func InitDB() {
 	var err error
 
-	err = godotenv.Load("C:/Users/abuba/Desktop/todo-app/go-todo-api/.env")
+	err = godotenv.Load()
 	if err != nil {
 		log.Fatal(err)
 	}
