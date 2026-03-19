@@ -19,9 +19,7 @@ func InitDB() {
 		log.Fatal(err)
 	}
 
-	dsn := "root:" + os.Getenv("DB_PASSWRD") + "@tcp(localhost:3306)/todo_db"
-
-	DB, err = sql.Open("mysql", dsn)
+	DB, err = sql.Open("mysql", os.Getenv("MYSQL_DSN"))
 	if err != nil {
 		log.Fatal(err)
 	}
