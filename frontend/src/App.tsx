@@ -22,7 +22,7 @@ export default function TodoApp() {
   // console.log(editID);
   // console.log(todoToEdit);
 
-  const API = "http://localhost:8080";
+  const API = "https://golang-todo-app-7caf.onrender.com";
 
   async function fetchTodos(): Promise<void> {
     try {
